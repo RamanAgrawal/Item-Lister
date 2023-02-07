@@ -30,11 +30,15 @@ function addItem(e){
 
   // Append text node
   deleteBtn.appendChild(document.createTextNode('X'));
-  
+  let editBtn=document.createElement('button')
+  editBtn.className = 'btn btn-primary btn-sm float-right ';
+  editBtn.appendChild(document.createTextNode('Edit'))
+
   
 
   // Append button to li
-   
+  li.appendChild(editBtn);
+
   li.appendChild(deleteBtn);
 
   // Append li to list
